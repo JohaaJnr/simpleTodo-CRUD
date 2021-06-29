@@ -1,0 +1,32 @@
+.container{
+    padding: 20px;
+    
+}
+.jumbotron{
+    background-color: #343a40;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 251, 246);
+    
+}
+#textarea{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border-style: hidden;
+}
+#submitbtn{
+    padding: 10px;
+    border-style: hidden;
+    border-radius: 10px;
+    
+}
+.table{
+    text-align: center;
+    border-style: hidden;
+}
+.btnn{
+    border-style: hidden;
+    background-color: #343a40;
+    color: azure;
+}
