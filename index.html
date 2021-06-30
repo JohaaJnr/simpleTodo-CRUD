@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1, user-scalable=no">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"  crossorigin="anonymous"></script>
     
     <title>Document</title>
 </head>
@@ -17,17 +17,42 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">My Todo List</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><span class="navbar-toggler-icon" ></span></a>
           </button>
       
         </div>
       </nav>
+
+       <!--Modal-->
+       
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">About Usage</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>This App doesnt store anything. Simply add & delete your todos on the go. Refresh the app to clear everything.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!---->
       <!--Body-->
      
+     
+
+
         <div class="jumbotron">
             <h1 class="display-4">Simple To-do List</h1>
-            <p class="lead">Todo List Using jquery, Node JS & REST API (MySql db)</p>
+            <p class="lead">Todo List Using jquery</p>
             <hr class="my-4">
             <form id="form">
                 <input type="text" id="textarea" placeholder="Type Anything...">
@@ -35,7 +60,7 @@
             </form>
           </div>
      <div class="container">
-      <table class="table  table-dark table-hover">
+      <table id="todos" class="table table-dark table-hover">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -50,6 +75,6 @@
       </table>
      </div>
     <!---->
-   <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
